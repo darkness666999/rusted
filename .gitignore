@@ -1,4 +1,7 @@
-# Logs
+# Ignore build artifacts and dependencies
+src-tauri/target/
+src-tauri/gen/schemas
+
 logs
 *.log
 npm-debug.log*
@@ -12,7 +15,6 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
