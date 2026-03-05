@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-# Tauri + React + Typescript
-
-This template should help get you started developing with Tauri, React and Typescript in Vite.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
-=======
 # rusted
 Video capture application leverage of ffmpeg build over Tauri with Rust backend and React frontend
->>>>>>> bd69f253a939edb4469bda38c6e9baf2578c9574
+
+# Status
+Curently the system runs only on windows, it si a hobby project but will try to make it functional for mac os and linux.
+For now there is a setup batch for decompressing ffmpeg since is used as a sidecar for the recording.
