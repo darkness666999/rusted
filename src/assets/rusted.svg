@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="rusted-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a4d69;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b86b4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="core-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#63ace5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#81d8d0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <path d="M 120 40 
+           L 300 40 
+           C 380 40, 420 80, 420 160 
+           C 420 240, 380 280, 300 280 
+           L 180 280 
+           L 180 400 
+           L 120 400 
+           Z" 
+        fill="url(#rusted-gradient)" 
+        stroke="#1a3d59" 
+        stroke-width="12" 
+        stroke-linejoin="round"/>
+        
+  <path d="M 280 280 
+           L 400 472 
+           L 320 472 
+           L 220 310 
+           Z" 
+        fill="url(#rusted-gradient)" 
+        stroke="#1a3d59" 
+        stroke-width="12" 
+        stroke-linejoin="round"/>
+        
+  <circle cx="300" cy="160" r="100" fill="none" stroke="#63ace5" stroke-width="16" stroke-dasharray="150, 60" />
+  <circle cx="300" cy="160" r="80" fill="url(#core-gradient)" stroke="#1a3d59" stroke-width="8" />
+  
+  <circle cx="300" cy="160" r="40" fill="#2a4d69" stroke="#63ace5" stroke-width="6" />
+
+</svg>
