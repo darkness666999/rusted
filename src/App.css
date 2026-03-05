@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+.snip-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 15, 26, 0.4); 
+  cursor: crosshair;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.selection-box {
+  position: absolute;
+  border: 1px solid #22d3ee; 
+  background: rgba(34, 211, 238, 0.05);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.3), 0 0 0 9999px rgba(10, 15, 26, 0.7);
+}
+
+/* Extra touch: Corner brackets to match your "Engineering" aesthetic */
+.selection-box::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; width: 10px; height: 10px;
+  border-top: 2px solid #22d3ee; border-left: 2px solid #22d3ee;
+}
+.selection-box::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; right: -2px; width: 10px; height: 10px;
+  border-bottom: 2px solid #22d3ee; border-right: 2px solid #22d3ee;
+}
+
+html, body {
+  background: transparent !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+[data-tauri-drag-region] {
+  cursor: grab;
+}
+[data-tauri-drag-region]:active {
+  cursor: grabbing;
+}
